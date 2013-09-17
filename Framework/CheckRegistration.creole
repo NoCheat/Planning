@@ -1,0 +1,11 @@
+=CheckRegistration=
+
+We want to achieve some basic goals here:
+* Registration can be simple, possible with one class (advanced use may be more complex).
+* On-the-fly registration and removal of checks.
+* Check types also have to be as flexible (register, remove, use the same type but rule take priority over another available implementation).
+* Cross-check data access and compatibility aspects are important (e.g. possibility to relate to other checks for listener processing order).
+* Checks can at least somehow query if their dependencies are present (data sources, events, packets, other checks, similar).
+
+Extended goals can be:
+* Some dependency / factory management is provided, so checks and components can get added / removed as available/needed.

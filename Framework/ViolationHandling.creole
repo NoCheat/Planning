@@ -1,0 +1,10 @@
+=ViolationHandling=
+
+Important topic.
+
+* abstractions to levels
+** "linear scale": High level = high violation
+** "red line": A specific red line is crossed, like moving into a block or being too long in air (without being able if it would go on far or not at this point).
+** Mixtures possible?
+* cross-check questions).
+* history

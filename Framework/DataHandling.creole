@@ -1,0 +1,13 @@
+=DataHandling=
+
+Checks need data, some checks might want to use shared data, some generic or very basic data pays to store in some central place,
+after all also the violation handling needs some core-place to store history and/or data relevant for further processing.
+
+==Topics==
+
+* Ability to store data given from checks on an efficient way.
+* Ability to retrieve (any?) checks data in a central place.
+* Efficiency.
+* Auto clean-up of data that isn't needed by the checks anymore.
+* Might want to distinguish access by internals / checks and by other plugins (official external API).
+* Maybe: Data persistence.

@@ -1,0 +1,14 @@
+=Logging=
+
+A logging framework is clearly needed, specifically for efficiency, i.e. asynchronous file access, all sorts of targets (external impl., databases).
+
+However there are more hot topics:
+* Granularity: Specific ways to categorize a log message (severity level, frequency indicator could be given by the check or estimated by statistics).
+* Flexible streaming:
+** Select sources for logging data generated: Confine by worlds, players, checks.
+** Select logging targets: A new file (e.g. for a cached moving trace for a bug report), ingame chat.
+** Ability to route any source anywhere.
+** Ability for checks to open channels (e.g. for error reporting / debugging).
+
+Specifically for notifications there could also be other filters of interest:
+* Reduce amount of messages by adaptive reduction (needs statistics / counting), interesting for in-game chat.

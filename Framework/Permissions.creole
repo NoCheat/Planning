@@ -1,0 +1,11 @@
+=Permissions=
+
+Permissions handling: This is a fundamental service that should be provided by one of the lower layers of the framework.
+
+It could be interesting to have an abstraction for permissions (even necessary).
+[Add justification / use cases!]
+
+Feature-wise it might by useful to cache some permissions for several scenarios:
+* Asynchronous checks: Can not check them asynchronously, waiting for the main thread to run a task makes processing much slower. Though this always means that we are behind on checking.
+* Checks: Specifically the moving checks need a range of permissions to be checked, which also could be stored in some simplified way (a check-wildcard-thing might be interesting).
+
