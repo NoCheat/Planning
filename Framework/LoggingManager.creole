@@ -4,8 +4,6 @@ The LogginManager will log alerts to a file/database for later use.
 
 ===Tasks===
 
-* Try to find an efficent way of not spamming the user
-
 ===Toughs===
 
 * In what will we display/count the violations thrown out by checks? Violations, PunishmentPoints, Tickets or other? (MyPictures: Vote for VL/Violations)
