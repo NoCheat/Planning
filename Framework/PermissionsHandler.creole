@@ -1,0 +1,12 @@
+PermissionsHandler
+========
+The PermissionsHandler will handle permissions for players.
+
+Tasks:===Tasks===
+** SuperPerm based permissions handling
+** Permissions should be cached for performance gain (MyPictures: I vote that only check permissions should be cached but administration commands shouldn't be cached)
+** Permissions parents should be supported here
+
+===Toughs===
+
+** An option to ignore OP status maybe?
