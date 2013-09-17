@@ -4,12 +4,12 @@ The LogginManager will log alerts to a file/database for later use.
 
 ===Tasks===
 
-* Log alerts that checks have thrown out to a database/file
 * Try to find an efficent way of not spamming the user
-* Violations should be all on the same level [balanced] (better for global action configuration). Maybe we can us decimals instead of default numbers? (SurvivalFly 1 block cheat = 500 VL while NoSwing 1 swing fail = 1 VL so idea: SurvivalFly 5.0 and NoSwing 1.0)
 
 ===Toughs===
 
 * In what will we display/count the violations thrown out by checks? Violations, PunishmentPoints, Tickets or other? (MyPictures: Vote for VL/Violations)
 * Ability to log messages on DB types other then flatfile (sqlite, mysql and other)?
 * Is it possible to log messages asynchronously?
+* Log alerts that checks have thrown out to a database/file
+* Violations should be all on the same level [balanced] (better for global action configuration). Maybe we can us decimals instead of default numbers? (SurvivalFly 1 block cheat = 500 VL while NoSwing 1 swing fail = 1 VL so idea: SurvivalFly 5.0 and NoSwing 1.0)
