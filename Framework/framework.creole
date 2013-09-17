@@ -1,13 +1,18 @@
 =Framework=
 
+What is the framework?
+* The framework provides the basic registry and interlink functionality for checks and system components.
+* Ideally most core topics are getting a base here: like check registry (and general registries), notifications, logging, data management, configuration and some dependency management.
+* Not entirely sure: could be several layers of framework like "kernel", "check base", ("default abstraction and data source providers").
+
+
 Why a framework? What are the goals?
 
 Some goals have been decided on:
-
 * Less dependency on a certain server implementation or API (not necessarily none).
-* On-the-fly check adding and removing (implies managing all listeners internally with ordering).
+* On-the-fly check adding and removing (implies managing all listeners internally with ordering, also implies no enums for check types and similar).
 * Generic registry for components, e.g. checks, data source providers, Listener registries... Aiming at testability, resolving dependencies, automatic registration of needed providers (+unregistration if not needed).
 * Flexible notifications/debug channels: receive input from several selected sources, route it somewhere significant.
 * Testability (would result from registries and abstraction in certain areas, theoretically allow recording players moves and surrounding blocks to replay it for debugging or testing).
 
-More points to be added upon discussion (might have forgotten some), only add after discussion in tickets + pull request :p.
+More points to be added or changed upon discussion (might have forgotten some), only add after discussion in tickets + pull request :p.
