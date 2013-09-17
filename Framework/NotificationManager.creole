@@ -5,10 +5,10 @@ The NotificationManager will give notifications to ingame player which are permi
 
 ===Tasks===
 
-** Global notification limit so ingame chat wont get spammed if a player fails xx checks together
+* Global notification limit so ingame chat wont get spammed if a player fails xx checks together
 
 ===Toughs===
 
-** After a configurable amount of notifications NoCheat would stop giving out notifications and post a message in the in-game chat such as: "A/Some players have failed more alerts that have been shown here please use /nocheat alerts <player> to see all notifications>". After this message it would take a conferable amount of break before it starts notifying again. <-- MyPictures idea to solve ingame spamming kinda
-** Messages could be shown in colours (Green: Low Alert Yellow: Medium Alert Red: High Alert) and it should be based of the Violation level of the LoggingManager
-** Shorter notification messages would be better maybe
+* After a configurable amount of notifications NoCheat would stop giving out notifications and post a message in the in-game chat such as: "A/Some players have failed more alerts that have been shown here please use /nocheat alerts <player> to see all notifications>". After this message it would take a conferable amount of break before it starts notifying again. <-- MyPictures idea to solve ingame spamming kinda
+* Messages could be shown in colours (Green: Low Alert Yellow: Medium Alert Red: High Alert) and it should be based of the Violation level of the LoggingManager
+* Shorter notification messages would be better maybe

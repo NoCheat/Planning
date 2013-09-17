@@ -1,12 +1,12 @@
 DataManager
 ========
-This part of the framework is responsible for handling that data that has been processed by checks.
+This part of the framework is responsible for handling the processed data of all NoCheat checks.
 
 ===Tasks===
 
-** Ability to store data given from checks on an efficient way
-** Auto clean-up of data that isn't needed by the checks anymore
+* Ability to store data given from checks on an efficient way
+* Auto clean-up of data that isn't needed by the checks anymore
 
 ===Toughs===
 
-** Maybe let other plugins access this data aswell? (Read Only)
+* Maybe let other plugins access this data aswell? (Read Only)
