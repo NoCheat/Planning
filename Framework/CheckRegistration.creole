@@ -11,6 +11,21 @@ Extended goals can be:
 * Some dependency / factory management is provided, so checks and components can get added / removed as available/needed.
 
 ----
-Questions from last session:
 
+Results from the first session:
 * CheckType is a class, returned by a registry to identify a check, depict hierarchy, permission string, used for storing data by check types.
+
+
+Typical problem:
+* A check is to be registered, i.e. a CheckType and listeners, logging / configuration etc. have to be linked.
+* At the moment of the registration it is not certain that the dependencies are present (e.g. a specific ListenerRegistry).
+* If we allow "might not be present", then we need the checks to be added as a factory-like context-object which is processed in post-enable (or after if reload it is determined what to actually register).
+* If we demand dependencies to be present at the point of adding a check, then we can't have on-demand services.
+
+Maybe possible solution:
+* Demand all dependencies to be present at the moment of adding a check, but allow on-demand-factories.
+* On-demand components can then be created if needed, so a check isAvailable(XyZaBc.class) would also check the factories.
+
+Remaining question:
+* Is there a use-case for the need of 1. gather dependencies and factories 2. do the registration delayed in one go ?
+** Replacing an already present check (which has other components depending on it). Implications for configuration reading for instance.
