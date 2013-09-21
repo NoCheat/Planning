@@ -16,3 +16,6 @@ Some goals have been decided on:
 * Testability (would result from registries and abstraction in certain areas, theoretically allow recording players moves and surrounding blocks to replay it for debugging or testing).
 
 More points to be added or changed upon discussion (might have forgotten some), only add after discussion in tickets + pull request :p.
+
+----
+

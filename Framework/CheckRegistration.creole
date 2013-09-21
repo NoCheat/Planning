@@ -9,3 +9,8 @@ We want to achieve some basic goals here:
 
 Extended goals can be:
 * Some dependency / factory management is provided, so checks and components can get added / removed as available/needed.
+
+----
+Questions from last session:
+
+* CheckType is a class, returned by a registry to identify a check, depict hierarchy, permission string, used for storing data by check types.
