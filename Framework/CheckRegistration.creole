@@ -29,3 +29,11 @@ Maybe possible solution:
 Remaining question:
 * Is there a use-case for the need of 1. gather dependencies and factories 2. do the registration delayed in one go ?
 ** Replacing an already present check (which has other components depending on it). Implications for configuration reading for instance.
+
+----
+
+Session 2:
+
+Decision for IRegistrationContext.
+
+To add something to NC, a special object is added which defines dependencies and has a method to actually add things (factory-like) and a method to remove it.
