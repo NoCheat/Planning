@@ -11,3 +11,14 @@ after all also the violation handling needs some core-place to store history and
 * Auto clean-up of data that isn't needed by the checks anymore.
 * Might want to distinguish access by internals / checks and by other plugins (official external API).
 * Maybe: Data persistence.
+
+
+----
+
+Session 2:
+
+Async / sync data/config access poses a problem if meant to be stored centrally.
+* Syncing all data is inacceptable.
+* Doubling all signatures (+an async version per method, roughly)
+* Getting sync data in an async way (by it a copy), could be one of the easier tasks.
+* Alternative might be to use an extra broker implementation for data wirth async access (to be used with sync(data instance)).
